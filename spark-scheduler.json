@@ -7,5 +7,5 @@
         "http://d3kbcqa49mib13.cloudfront.net/spark-1.5.2-bin-hadoop2.6.tgz",
         "https://github.com/eddyzags/spark-scheduler/archive/master.tar.gz"
     ],
-    "cmd": "mv spark-scheduler-master/run.sh spark-1.5.2-bin-hadoop2.6 && cd spark-1.5.2-bin-hadoop2.6 && $(pwd)/run.sh --port 7077 --master mesos://zk://5.196.75.109:2181,5.196.75.110:2181,5.196.75.111:2181/mesos --zk 5.196.75.109:2181,5.196.75.110:2181,5.196.75.111:2181 --name spark-scheduler --webui-port 7078"
+    "cmd": "mv spark-scheduler-master/run.sh spark-1.5.2-bin-hadoop2.6 && cd spark-1.5.2-bin-hadoop2.6 && $(pwd)/run.sh --name spark-scheduler --port 7077 --webui-port 7078 --master mesos://zk://5.196.75.109:2181,5.196.75.110:2181,5.196.75.111:2181/mesos --zk 5.196.75.109:2181,5.196.75.110:2181,5.196.75.111:2181"
 }
